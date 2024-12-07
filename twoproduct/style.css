@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#cursor {
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    background-color: #f92222f9;
+    border-radius: 50%;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+    z-index: 8;
+    mix-blend-mode: difference;
+    
+}
+
+#nav{
+    display: flex;
+    height: 150px;
+    width: 100%;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 150px;
+    z-index: 99;
+    position: fixed;
+    mix-blend-mode: difference;
+    gap: 40px;
+     
+}
+#nav img{
+    height: 80px;
+    width: 120px;
+    
+}
+
+#nav h4{
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0 2%;
+    font-size: 15px;
+    
+}
+#l1 {
+    margin-left: 100px;
+    text-decoration: underline;
+}
+
+.main {
+    background-color: #151515;
+    
+}
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+}
+
+#page1 h1 {
+    font-size: 7vw;
+    font-weight: 150;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 18vw;
+    margin-left: 8vw;
+}
+
+#page1 h2 {
+    font-size: 8vw;
+    font-weight: 150;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 32vw;
+}
+
+#page1 video{
+    width: 60%;
+    
+    margin-top: 5%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    border-bottom:2px solid #151515;
+    z-index: 9;
+    position: relative;
+}
+#page2 h1 {
+    padding: 1vw 16%;
+    font-size: 5vw;
+    font-weight: 500;
+    color: #151515;
+}
+
+#page2-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+    width: 100%;
+    padding: 0 5vw;
+}
+
+#page2-left {
+    width: 40%;
+}
+
+#page2-right {
+    width: 30%;
+    
+}
+
+#page2-right p{
+    font-size: 1.7vw;
+    color: #151515;
+}
+
+#page2-right button{
+    width: 100%;
+    margin-top: 2vw;
+    font-size: 20px;
+    color: #151515;
+    background-color: transparent;
+}
+
+
+#page2-left h2{
+    font-size: 4vw;
+    font-weight: 100;
+    line-height: 4vw;
+    color: #151515;
+}
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+    z-index: 9;
+    
+}
+
+#page3 h1 {
+    color: #151515;
+    font-size: 6.5vw;
+    font-weight: 100;
+    margin-left: 100px;
+}
+
+#page3-part1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#page3-part1 img{
+    height: 60vh;
+    margin-top: 160px;
+}
+#page3-part1 video{
+    height: 60vh;
+
+}
+
+#page3-part2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+#page3-part2 video {
+    height: 60vh;
+    margin : 70px 50px;
+}
+
+#page3-part2 img {
+    height: 80vh;
+}
+
+#page4 {
+    min-height: 110vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    padding: 125px;
+}
+
+.elem {
+    /* background-color: salmon; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.elem img {
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(3deg);
+}
+
+.elem img:nth-child(1){
+    left: 12%;
+}
+
+.elem img:nth-child(3){
+    right: 20%;
+}
+
+.elem:nth-child(1) img:nth-child(3){
+    bottom: 60%;
+}
+.elem:nth-child(2) img:nth-child(1){
+    bottom: 45%;
+}
+.elem:nth-child(3) img:nth-child(3){
+    right: 10%;
+    top: 20%;
+}
+
+.elem:hover h1{
+    transform: translateY(-100% );
+    color: #f92222d2;
+}
+
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+}
+.text-div {
+    /* background-color: antiquewhite; */
+    height: 140px;
+    overflow: hidden;
+}
+.elem h1 {
+    font-size: 7.3vw;
+    font-weight: 100;
+    transition: all ease-out 0.5s;
+}
+#page5 {
+    min-height: 150vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    padding: 80px 100px;
+}
+
+#page5 h1 {
+    font-size: 4vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.box {
+    align-items: center;
+    height: 80px;
+    padding: 10px 20px;
+    border-top: 2px solid #d2d2d2;
+}
+
+.box:nth-last-child(1) {
+    border-bottom: 2px solid #d2d2d2;
+}
+
+
+
+footer {
+    height: 80vh;
+    width: 100%;
+    background-color: aqua;
+}
+
