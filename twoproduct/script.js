@@ -100,7 +100,7 @@ nt3.to(".main" , {
 var boxes = document.querySelectorAll(".box")
 boxes.forEach(function(elem){
       elem.addEventListener("mouseenter" , function(){
-        elem.style.backgroundColor = "#f92222d2" 
+        elem.style.backgroundColor = "rgba(0,0,0,0.2)" 
         var att = elem.getAttribute("data-image")
         crsr.style.width = "250px"
         crsr.style.height = "250px"
